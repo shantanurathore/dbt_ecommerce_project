@@ -10,7 +10,7 @@ from sqlalchemy.schema import Index
 Base = declarative_base()
 
 class Transaction(Base):
-    __tablename__ = 'transactions'
+    __tablename__ = 'ecomm_transactions'
 
     transaction_id = Column(Integer, primary_key=True)
     user_id = Column(Integer, index=True)
@@ -69,7 +69,7 @@ if __name__ == "__main__":
 
     # AWS MySQL connection string
     # Replace with your actual AWS MySQL connection details
-    db_url = "mysql+pymysql://username:password@your-aws-mysql-endpoint:3306/your_database_name"
+    db_url = "mysql+pymysql://admin:passwordpatanahi@dsprojectsdb1.c34e2eieueaa.us-east-2.rds.amazonaws.com/ecomm_transactions_db"
 
     # Upload to AWS
     upload_to_aws(df, db_url)
