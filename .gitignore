@@ -1,0 +1,10 @@
+dbt_ecommerce_env/
+*.pyc
+__pycache__/
+target/
+logs/
+.user.yml
+profiles.yml
+*.env
+.DS_Store
+Thumbs.db
