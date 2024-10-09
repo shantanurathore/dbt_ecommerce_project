@@ -1,0 +1,1461 @@
+[0m20:33:43.189337 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110b86f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110bdd220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110bdcf20>]}
+
+
+============================== 20:33:43.191778 | 1c592af5-ec28-448a-80ca-dfb55ab0fff6 ==============================
+[0m20:33:43.191778 [info ] [MainThread]: Running with dbt=1.7.18
+[0m20:33:43.192072 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/Users/shanr/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init dbt_mysql_project', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m20:33:43.192358 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/Users/shanr/.dbt')}
+[0m20:33:43.192517 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m20:33:43.193054 [debug] [MainThread]: Starter project path: /Users/shanr/Desktop/dbt_ecommerce_project/dbt_ecommerce_proj_env/lib/python3.12/site-packages/dbt/include/starter_project
+[0m20:33:43.196683 [info ] [MainThread]: 
+Your new dbt project "dbt_mysql_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:33:43.196855 [info ] [MainThread]: Setting up your profile.
+[0m20:33:55.139108 [info ] [MainThread]: Profile dbt_mysql_project written to /Users/shanr/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m20:33:55.139993 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 11.976628, "process_user_time": 0.97412, "process_kernel_time": 0.132194, "process_mem_max_rss": "108396544", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m20:33:55.140322 [debug] [MainThread]: Command `dbt init` succeeded at 20:33:55.140242 after 11.98 seconds
+[0m20:33:55.140523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1072aef60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077f5880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c2a3f0>]}
+[0m20:33:55.140741 [debug] [MainThread]: Flushing usage events
+[0m22:17:26.037474 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110074dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100d50a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100d4d70>]}
+
+
+============================== 22:17:26.039669 | c76565a7-c1d4-48de-80fb-882ed1cc35b0 ==============================
+[0m22:17:26.039669 [info ] [MainThread]: Running with dbt=1.7.18
+[0m22:17:26.039979 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/shanr/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug --profiles-dir /Users/shanr/.dbt', 'send_anonymous_usage_stats': 'True'}
+[0m22:17:26.040346 [info ] [MainThread]: dbt version: 1.7.18
+[0m22:17:26.040499 [info ] [MainThread]: python version: 3.12.5
+[0m22:17:26.040638 [info ] [MainThread]: python path: /Users/shanr/Desktop/dbt_ecommerce_project/dbt_ecommerce_proj_env/bin/python3.12
+[0m22:17:26.040776 [info ] [MainThread]: os info: macOS-14.6.1-arm64-arm-64bit
+[0m22:17:26.093121 [info ] [MainThread]: Using profiles dir at /Users/shanr/.dbt
+[0m22:17:26.093396 [info ] [MainThread]: Using profiles.yml file at /Users/shanr/.dbt/profiles.yml
+[0m22:17:26.093561 [info ] [MainThread]: Using dbt_project.yml file at /Users/shanr/Desktop/dbt_ecommerce_project/dbt_mysql_project/dbt_project.yml
+[0m22:17:26.093720 [info ] [MainThread]: Configuration:
+[0m22:17:26.093859 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m22:17:26.093994 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:17:26.094122 [info ] [MainThread]: Required dependencies:
+[0m22:17:26.094302 [debug] [MainThread]: Executing "git --help"
+[0m22:17:26.101084 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:17:26.101576 [debug] [MainThread]: STDERR: "b''"
+[0m22:17:26.101791 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:17:26.101971 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m22:17:26.102147 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m22:17:26.102288 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dbt_mysql_project", target "dev" invalid: ['schema'] is not valid under any of the given schemas
+
+
+[0m22:17:26.102450 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/shanr/Desktop/dbt_ecommerce_project/dbt_mysql_project/dbt_project.yml> not found
+
+[0m22:17:26.103559 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.09278221, "process_user_time": 0.880188, "process_kernel_time": 0.087537, "process_mem_max_rss": "106397696", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m22:17:26.103965 [debug] [MainThread]: Command `dbt debug` failed at 22:17:26.103891 after 0.09 seconds
+[0m22:17:26.104223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100d4d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100d4ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f85f40>]}
+[0m22:17:26.104476 [debug] [MainThread]: Flushing usage events
+[0m22:20:26.676752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105275100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052d5070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052d4dd0>]}
+
+
+============================== 22:20:26.678935 | 77ff1712-bdd2-4df7-828b-403476a1de3d ==============================
+[0m22:20:26.678935 [info ] [MainThread]: Running with dbt=1.7.18
+[0m22:20:26.679232 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/Users/shanr/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug --profiles-dir /Users/shanr/.dbt', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:20:26.679555 [info ] [MainThread]: dbt version: 1.7.18
+[0m22:20:26.679710 [info ] [MainThread]: python version: 3.12.5
+[0m22:20:26.679852 [info ] [MainThread]: python path: /Users/shanr/Desktop/dbt_ecommerce_project/dbt_ecommerce_proj_env/bin/python3.12
+[0m22:20:26.679991 [info ] [MainThread]: os info: macOS-14.6.1-arm64-arm-64bit
+[0m22:20:26.711381 [info ] [MainThread]: Using profiles dir at /Users/shanr/.dbt
+[0m22:20:26.711666 [info ] [MainThread]: Using profiles.yml file at /Users/shanr/.dbt/profiles.yml
+[0m22:20:26.711820 [info ] [MainThread]: Using dbt_project.yml file at /Users/shanr/Desktop/dbt_ecommerce_project/dbt_mysql_project/dbt_project.yml
+[0m22:20:26.713020 [info ] [MainThread]: adapter type: mysql
+[0m22:20:26.713173 [info ] [MainThread]: adapter version: 1.7.0
+[0m22:20:26.713328 [info ] [MainThread]: Configuration:
+[0m22:20:26.713461 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:20:26.713602 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:20:26.713727 [info ] [MainThread]: Required dependencies:
+[0m22:20:26.713903 [debug] [MainThread]: Executing "git --help"
+[0m22:20:26.720866 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:20:26.721462 [debug] [MainThread]: STDERR: "b''"
+[0m22:20:26.721665 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:20:26.721836 [info ] [MainThread]: Connection:
+[0m22:20:26.722022 [info ] [MainThread]:   server: dsprojectsdb1.c34e2eieueaa.us-east-2.rds.amazonaws.com
+[0m22:20:26.722161 [info ] [MainThread]:   unix_socket: None
+[0m22:20:26.722289 [info ] [MainThread]:   port: 3306
+[0m22:20:26.722418 [info ] [MainThread]:   database: None
+[0m22:20:26.722685 [info ] [MainThread]:   schema: ecomm_transactions_db
+[0m22:20:26.722869 [info ] [MainThread]:   user: admin
+[0m22:20:26.723128 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m22:20:26.736264 [debug] [MainThread]: Acquiring new mysql connection 'debug'
+[0m22:20:26.736784 [debug] [MainThread]: Using mysql connection "debug"
+[0m22:20:26.736946 [debug] [MainThread]: On debug: select 1 as id
+[0m22:20:26.737094 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:20:27.241122 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m22:20:27.246084 [debug] [MainThread]: On debug: Close
+[0m22:20:27.247234 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:20:27.247825 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:20:27.248266 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/shanr/Desktop/dbt_ecommerce_project/dbt_mysql_project/dbt_project.yml> not found
+
+[0m22:20:27.251349 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.6000507, "process_user_time": 0.891461, "process_kernel_time": 0.097168, "process_mem_max_rss": "111312896", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m22:20:27.252286 [debug] [MainThread]: Command `dbt debug` failed at 22:20:27.252089 after 0.60 seconds
+[0m22:20:27.252803 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:20:27.253275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053a6d20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104aa1af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104fc28a0>]}
+[0m22:20:27.254047 [debug] [MainThread]: Flushing usage events
+[0m22:33:35.007574 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bb12e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c10f20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c10c80>]}
+
+
+============================== 22:33:35.009781 | 9f39c16a-a7d6-48d5-b7a6-7407ef65bb65 ==============================
+[0m22:33:35.009781 [info ] [MainThread]: Running with dbt=1.7.18
+[0m22:33:35.010091 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/shanr/Desktop/dbt_ecommerce_project/dbt_mysql_project/logs', 'version_check': 'True', 'profiles_dir': '/Users/shanr/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug --profiles-dir /Users/shanr/.dbt', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:33:35.010397 [info ] [MainThread]: dbt version: 1.7.18
+[0m22:33:35.010550 [info ] [MainThread]: python version: 3.12.5
+[0m22:33:35.010697 [info ] [MainThread]: python path: /Users/shanr/Desktop/dbt_ecommerce_project/dbt_ecommerce_proj_env/bin/python3.12
+[0m22:33:35.010831 [info ] [MainThread]: os info: macOS-14.6.1-arm64-arm-64bit
+[0m22:33:35.041022 [info ] [MainThread]: Using profiles dir at /Users/shanr/.dbt
+[0m22:33:35.041300 [info ] [MainThread]: Using profiles.yml file at /Users/shanr/.dbt/profiles.yml
+[0m22:33:35.041520 [info ] [MainThread]: Using dbt_project.yml file at /Users/shanr/Desktop/dbt_ecommerce_project/dbt_mysql_project/dbt_project.yml
+[0m22:33:35.041802 [info ] [MainThread]: adapter type: mysql
+[0m22:33:35.041960 [info ] [MainThread]: adapter version: 1.7.0
+[0m22:33:35.077750 [info ] [MainThread]: Configuration:
+[0m22:33:35.078076 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:33:35.078244 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:33:35.078472 [info ] [MainThread]: Required dependencies:
+[0m22:33:35.078906 [debug] [MainThread]: Executing "git --help"
+[0m22:33:35.085533 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:33:35.086039 [debug] [MainThread]: STDERR: "b''"
+[0m22:33:35.086225 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:33:35.086389 [info ] [MainThread]: Connection:
+[0m22:33:35.086551 [info ] [MainThread]:   server: dsprojectsdb1.c34e2eieueaa.us-east-2.rds.amazonaws.com
+[0m22:33:35.086682 [info ] [MainThread]:   unix_socket: None
+[0m22:33:35.086808 [info ] [MainThread]:   port: 3306
+[0m22:33:35.086930 [info ] [MainThread]:   database: None
+[0m22:33:35.087054 [info ] [MainThread]:   schema: ecomm_transactions_db
+[0m22:33:35.087178 [info ] [MainThread]:   user: admin
+[0m22:33:35.087468 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m22:33:35.090616 [debug] [MainThread]: Acquiring new mysql connection 'debug'
+[0m22:33:35.091090 [debug] [MainThread]: Using mysql connection "debug"
+[0m22:33:35.091227 [debug] [MainThread]: On debug: select 1 as id
+[0m22:33:35.091356 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:33:35.483809 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m22:33:35.488705 [debug] [MainThread]: On debug: Close
+[0m22:33:35.490932 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:33:35.492024 [info ] [MainThread]: [32mAll checks passed![0m
+[0m22:33:35.495969 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.51388663, "process_user_time": 0.93643, "process_kernel_time": 0.100049, "process_mem_max_rss": "112279552", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m22:33:35.497371 [debug] [MainThread]: Command `dbt debug` succeeded at 22:33:35.497094 after 0.52 seconds
+[0m22:33:35.498464 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:33:35.499081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064fa6c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045c0770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066d3e60>]}
+[0m22:33:35.499691 [debug] [MainThread]: Flushing usage events
+[0m21:21:27.268284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f74b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fcd550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fcd2b0>]}
+
+
+============================== 21:21:27.271217 | 90b23bdf-5d4f-43e3-ad7b-910861dcb986 ==============================
+[0m21:21:27.271217 [info ] [MainThread]: Running with dbt=1.7.18
+[0m21:21:27.271537 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/shanr/Desktop/dbt_ecommerce_project/dbt_mysql_project/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/shanr/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m21:21:27.558968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '90b23bdf-5d4f-43e3-ad7b-910861dcb986', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11038f290>]}
+[0m21:21:27.584774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '90b23bdf-5d4f-43e3-ad7b-910861dcb986', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1103d37d0>]}
+[0m21:21:27.585288 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m21:21:27.601244 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m21:21:27.601826 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m21:21:27.602037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '90b23bdf-5d4f-43e3-ad7b-910861dcb986', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fabc20>]}
+[0m21:21:27.604088 [error] [MainThread]: Encountered an error:
+Parsing Error
+  The schema file at models/schema.yml is invalid because the value of 'models' is not a list
+[0m21:21:27.609148 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.37109447, "process_user_time": 0.966762, "process_kernel_time": 0.131479, "process_mem_max_rss": "107888640", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m21:21:27.609564 [debug] [MainThread]: Command `dbt run` failed at 21:21:27.609485 after 0.37 seconds
+[0m21:21:27.609814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f74b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1113e7da0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111375160>]}
+[0m21:21:27.610008 [debug] [MainThread]: Flushing usage events
+[0m21:23:11.244829 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060a50d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060c93d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060a62a0>]}
+
+
+============================== 21:23:11.247000 | 85efa68e-e8a6-4371-9740-fae7b49aa2f2 ==============================
+[0m21:23:11.247000 [info ] [MainThread]: Running with dbt=1.7.18
+[0m21:23:11.247316 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/shanr/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/shanr/Desktop/dbt_ecommerce_project/dbt_mysql_project/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m21:23:11.316275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '85efa68e-e8a6-4371-9740-fae7b49aa2f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060ec650>]}
+[0m21:23:11.343828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '85efa68e-e8a6-4371-9740-fae7b49aa2f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105dc1940>]}
+[0m21:23:11.344387 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m21:23:11.353585 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m21:23:11.354087 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m21:23:11.354306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '85efa68e-e8a6-4371-9740-fae7b49aa2f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106135070>]}
+[0m21:23:11.355922 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading dbt_mysql_project: schema.yml - Runtime Error
+    Syntax error near line 13
+    ------------------------------
+    10 | models:
+    11 |   - name: ecomm_total_user_sales
+    12 |     description:This model aggregates total sales by user.
+    13 |     columns:
+    14 |       - name: user_id
+    15 |         description: >
+    16 |           The unique identifier for the user.
+    
+    Raw Error:
+    ------------------------------
+    while scanning a simple key
+      in "<unicode string>", line 12, column 5
+    could not find expected ':'
+      in "<unicode string>", line 13, column 5
+[0m21:23:11.356856 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.13799763, "process_user_time": 0.940923, "process_kernel_time": 0.092117, "process_mem_max_rss": "109199360", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m21:23:11.357213 [debug] [MainThread]: Command `dbt run` failed at 21:23:11.357141 after 0.14 seconds
+[0m21:23:11.357448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060a50d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106249b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060cbb00>]}
+[0m21:23:11.357627 [debug] [MainThread]: Flushing usage events
+[0m21:24:54.536092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b74bc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107bc9550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107bc92e0>]}
+
+
+============================== 21:24:54.538242 | 78ce0d0c-f018-4653-b08e-e5e70a229d42 ==============================
+[0m21:24:54.538242 [info ] [MainThread]: Running with dbt=1.7.18
+[0m21:24:54.538564 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/shanr/Desktop/dbt_ecommerce_project/dbt_mysql_project/logs', 'debug': 'False', 'profiles_dir': '/Users/shanr/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m21:24:54.609855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '78ce0d0c-f018-4653-b08e-e5e70a229d42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078b4470>]}
+[0m21:24:54.636787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '78ce0d0c-f018-4653-b08e-e5e70a229d42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b74bc0>]}
+[0m21:24:54.637368 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m21:24:54.645776 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m21:24:54.646298 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m21:24:54.646506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '78ce0d0c-f018-4653-b08e-e5e70a229d42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ba5100>]}
+[0m21:24:54.648379 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading dbt_mysql_project: schema.yml - Runtime Error
+    Syntax error near line 13
+    ------------------------------
+    10 | models:
+    11 |   - name: ecomm_total_user_sales
+    12 |     description:This model aggregates total sales by user.
+    13 |     columns:
+    14 |       - name: user_id
+    15 |         description: The unique identifier for the user.
+    16 |         tests:
+    
+    Raw Error:
+    ------------------------------
+    while scanning a simple key
+      in "<unicode string>", line 12, column 5
+    could not find expected ':'
+      in "<unicode string>", line 13, column 5
+[0m21:24:54.649299 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.13905971, "process_user_time": 0.945947, "process_kernel_time": 0.097668, "process_mem_max_rss": "109215744", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m21:24:54.649670 [debug] [MainThread]: Command `dbt run` failed at 21:24:54.649592 after 0.14 seconds
+[0m21:24:54.649906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b920c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e891c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e8b800>]}
+[0m21:24:54.650079 [debug] [MainThread]: Flushing usage events
+[0m21:25:16.610128 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a96ff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e49460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e491c0>]}
+
+
+============================== 21:25:16.612354 | 4e357b77-129c-4d2f-a05c-a7a47c36e89c ==============================
+[0m21:25:16.612354 [info ] [MainThread]: Running with dbt=1.7.18
+[0m21:25:16.612654 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/shanr/Desktop/dbt_ecommerce_project/dbt_mysql_project/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/shanr/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m21:25:16.681423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4e357b77-129c-4d2f-a05c-a7a47c36e89c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d418b0>]}
+[0m21:25:16.708027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4e357b77-129c-4d2f-a05c-a7a47c36e89c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e48c80>]}
+[0m21:25:16.708582 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m21:25:16.717961 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m21:25:16.718615 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m21:25:16.718933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '4e357b77-129c-4d2f-a05c-a7a47c36e89c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10920a450>]}
+[0m21:25:17.172090 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Cannot set `database` to 'ecomm_transactions_db' in mysql!You can either unset `database`, or make it match `schema`, currently set to 'base'
+[0m21:25:17.173218 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.5887539, "process_user_time": 1.378522, "process_kernel_time": 0.096772, "process_mem_max_rss": "116457472", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m21:25:17.173552 [debug] [MainThread]: Command `dbt run` failed at 21:25:17.173479 after 0.59 seconds
+[0m21:25:17.173780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a96ff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1093ad1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10949bf80>]}
+[0m21:25:17.173966 [debug] [MainThread]: Flushing usage events
+[0m21:25:55.852591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108405460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108111790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10845d100>]}
+
+
+============================== 21:25:55.854824 | c9feaf5a-25c1-4782-aaf6-e0a2478c6b69 ==============================
+[0m21:25:55.854824 [info ] [MainThread]: Running with dbt=1.7.18
+[0m21:25:55.855125 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/shanr/.dbt', 'log_path': '/Users/shanr/Desktop/dbt_ecommerce_project/dbt_mysql_project/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:25:55.924111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c9feaf5a-25c1-4782-aaf6-e0a2478c6b69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073555b0>]}
+[0m21:25:55.950200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c9feaf5a-25c1-4782-aaf6-e0a2478c6b69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10847fbf0>]}
+[0m21:25:55.950747 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m21:25:55.960327 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m21:25:55.960863 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m21:25:55.961073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c9feaf5a-25c1-4782-aaf6-e0a2478c6b69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108818e60>]}
+[0m21:25:56.411350 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c9feaf5a-25c1-4782-aaf6-e0a2478c6b69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a654470>]}
+[0m21:25:56.416631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c9feaf5a-25c1-4782-aaf6-e0a2478c6b69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a677b00>]}
+[0m21:25:56.416876 [info ] [MainThread]: Found 3 models, 10 tests, 1 source, 0 exposures, 0 metrics, 375 macros, 0 groups, 0 semantic models
+[0m21:25:56.417066 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c9feaf5a-25c1-4782-aaf6-e0a2478c6b69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108749a30>]}
+[0m21:25:56.418102 [info ] [MainThread]: 
+[0m21:25:56.418529 [debug] [MainThread]: Acquiring new mysql connection 'master'
+[0m21:25:56.419123 [debug] [ThreadPool]: Acquiring new mysql connection 'list_schemas'
+[0m21:25:56.423806 [debug] [ThreadPool]: Using mysql connection "list_schemas"
+[0m21:25:56.424019 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "connection_name": "list_schemas"} */
+select distinct schema_name
+        from information_schema.schemata
+[0m21:25:56.424214 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:25:56.941496 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.0 seconds
+[0m21:25:56.945402 [debug] [ThreadPool]: On list_schemas: Close
+[0m21:25:56.948260 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_schemas, now list_None_ecomm_transactions_db)
+[0m21:25:56.954139 [debug] [ThreadPool]: Using mysql connection "list_None_ecomm_transactions_db"
+[0m21:25:56.954616 [debug] [ThreadPool]: On list_None_ecomm_transactions_db: BEGIN
+[0m21:25:56.954991 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:25:57.316208 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:25:57.317904 [debug] [ThreadPool]: Using mysql connection "list_None_ecomm_transactions_db"
+[0m21:25:57.318911 [debug] [ThreadPool]: On list_None_ecomm_transactions_db: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "connection_name": "list_None_ecomm_transactions_db"} */
+select
+      null as "database",
+      table_name as name,
+      table_schema as "schema",
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type
+      end as table_type
+    from information_schema.tables
+    where table_schema = 'ecomm_transactions_db'
+  
+[0m21:25:57.413114 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m21:25:57.418297 [debug] [ThreadPool]: On list_None_ecomm_transactions_db: ROLLBACK
+[0m21:25:57.461514 [debug] [ThreadPool]: On list_None_ecomm_transactions_db: Close
+[0m21:25:57.463675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c9feaf5a-25c1-4782-aaf6-e0a2478c6b69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a7d610>]}
+[0m21:25:57.464456 [debug] [MainThread]: Using mysql connection "master"
+[0m21:25:57.464924 [debug] [MainThread]: On master: BEGIN
+[0m21:25:57.465342 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:25:57.828402 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:25:57.828692 [debug] [MainThread]: On master: COMMIT
+[0m21:25:57.828849 [debug] [MainThread]: Using mysql connection "master"
+[0m21:25:57.828993 [debug] [MainThread]: On master: COMMIT
+[0m21:25:57.916664 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:25:57.916955 [debug] [MainThread]: On master: Close
+[0m21:25:57.917541 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:25:57.917729 [info ] [MainThread]: 
+[0m21:25:57.922981 [debug] [Thread-1 (]: Began running node model.dbt_mysql_project.ecomm_total_user_sales
+[0m21:25:57.923274 [info ] [Thread-1 (]: 1 of 3 START sql view model ecomm_transactions_db.ecomm_total_user_sales ....... [RUN]
+[0m21:25:57.923853 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_None_ecomm_transactions_db, now model.dbt_mysql_project.ecomm_total_user_sales)
+[0m21:25:57.924146 [debug] [Thread-1 (]: Began compiling node model.dbt_mysql_project.ecomm_total_user_sales
+[0m21:25:57.928237 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_mysql_project.ecomm_total_user_sales"
+[0m21:25:57.928932 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.ecomm_total_user_sales (compile): 21:25:57.924278 => 21:25:57.928807
+[0m21:25:57.929126 [debug] [Thread-1 (]: Began executing node model.dbt_mysql_project.ecomm_total_user_sales
+[0m21:25:57.945401 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_mysql_project.ecomm_total_user_sales"
+[0m21:25:57.946080 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.ecomm_total_user_sales"
+[0m21:25:57.946265 [debug] [Thread-1 (]: On model.dbt_mysql_project.ecomm_total_user_sales: BEGIN
+[0m21:25:57.946434 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:25:58.298864 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:25:58.300847 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.ecomm_total_user_sales"
+[0m21:25:58.301966 [debug] [Thread-1 (]: On model.dbt_mysql_project.ecomm_total_user_sales: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.ecomm_total_user_sales"} */
+
+  create view `ecomm_transactions_db`.`ecomm_total_user_sales__dbt_tmp`
+    
+    
+  as (
+    WITH user_totals_as (
+    SELECT
+        user_id,
+        product_category,
+        SUM(purchase_amount) AS total_sales
+    FROM `ecomm_transactions_db`.`transaction_id`
+    GROUP BY 1,2
+),
+sales_by_category AS (
+SELECT
+    user_id,
+    CASE WHEN product_category = 'App' THEN total_sales ELSE 0 END AS app_sales,
+    CASE WHEN product_category = 'Game' THEN total_sales ELSE 0 END AS game_sales,
+    CASE WHEN product_category = 'In-app Purchases' THEN total_sales ELSE 0 END AS inapp_sales,
+FROM user_totals_as
+)
+SELECT
+    user_id,
+    app_sales AS app_sales,
+    game_sales AS game_sales,
+    inapp_sales AS inapp_sales,
+    app_sales + game_sales + inapp_sales AS total_sales
+FROM sales_by_category
+  );
+[0m21:25:58.390708 [debug] [Thread-1 (]: mysql adapter: MySQL error: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT
+        user_id,
+        product_category,
+        SUM(purchase_amount) A' at line 8
+[0m21:25:58.392384 [debug] [Thread-1 (]: On model.dbt_mysql_project.ecomm_total_user_sales: ROLLBACK
+[0m21:25:58.435844 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.ecomm_total_user_sales (execute): 21:25:57.929235 => 21:25:58.434934
+[0m21:25:58.437183 [debug] [Thread-1 (]: On model.dbt_mysql_project.ecomm_total_user_sales: Close
+[0m21:25:58.449825 [debug] [Thread-1 (]: Database Error in model ecomm_total_user_sales (models/ecomm_total_user_sales.sql)
+  1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT
+          user_id,
+          product_category,
+          SUM(purchase_amount) A' at line 8
+  compiled Code at target/run/dbt_mysql_project/models/ecomm_total_user_sales.sql
+[0m21:25:58.450649 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c9feaf5a-25c1-4782-aaf6-e0a2478c6b69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1089bd0a0>]}
+[0m21:25:58.451485 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model ecomm_transactions_db.ecomm_total_user_sales  [[31mERROR[0m in 0.53s]
+[0m21:25:58.452189 [debug] [Thread-1 (]: Finished running node model.dbt_mysql_project.ecomm_total_user_sales
+[0m21:25:58.452649 [debug] [Thread-1 (]: Began running node model.dbt_mysql_project.my_first_dbt_model
+[0m21:25:58.453939 [info ] [Thread-1 (]: 2 of 3 START sql table model ecomm_transactions_db.my_first_dbt_model .......... [RUN]
+[0m21:25:58.454766 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_mysql_project.ecomm_total_user_sales, now model.dbt_mysql_project.my_first_dbt_model)
+[0m21:25:58.455153 [debug] [Thread-1 (]: Began compiling node model.dbt_mysql_project.my_first_dbt_model
+[0m21:25:58.458390 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:25:58.459214 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.my_first_dbt_model (compile): 21:25:58.455374 => 21:25:58.459025
+[0m21:25:58.459527 [debug] [Thread-1 (]: Began executing node model.dbt_mysql_project.my_first_dbt_model
+[0m21:25:58.477005 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:25:58.477751 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:25:58.478013 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: BEGIN
+[0m21:25:58.478239 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:25:58.846180 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:25:58.848016 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:25:58.849394 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+
+  
+    
+
+  create  table
+    `ecomm_transactions_db`.`my_first_dbt_model__dbt_tmp`
+    
+    
+      as
+    
+    (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    )
+
+  
+[0m21:25:59.060593 [debug] [Thread-1 (]: SQL status: SUCCESS 2 in 0.0 seconds
+[0m21:25:59.073757 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:25:59.074255 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+
+    drop table if exists `ecomm_transactions_db`.`my_first_dbt_model` cascade
+  
+[0m21:25:59.162853 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:25:59.167138 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:25:59.168088 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+
+    rename table `ecomm_transactions_db`.`my_first_dbt_model__dbt_tmp` to `ecomm_transactions_db`.`my_first_dbt_model`
+  
+[0m21:25:59.288755 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:25:59.313440 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: COMMIT
+[0m21:25:59.313865 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:25:59.314169 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: COMMIT
+[0m21:25:59.400843 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:25:59.412907 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:25:59.413471 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+drop table if exists `ecomm_transactions_db`.`my_first_dbt_model__dbt_backup`
+[0m21:25:59.505182 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:25:59.510808 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.my_first_dbt_model (execute): 21:25:58.459703 => 21:25:59.509897
+[0m21:25:59.512078 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: Close
+[0m21:25:59.513543 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c9feaf5a-25c1-4782-aaf6-e0a2478c6b69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bb40f20>]}
+[0m21:25:59.514418 [info ] [Thread-1 (]: 2 of 3 OK created sql table model ecomm_transactions_db.my_first_dbt_model ..... [[32mSUCCESS 2[0m in 1.06s]
+[0m21:25:59.515231 [debug] [Thread-1 (]: Finished running node model.dbt_mysql_project.my_first_dbt_model
+[0m21:25:59.516382 [debug] [Thread-1 (]: Began running node model.dbt_mysql_project.my_second_dbt_model
+[0m21:25:59.517043 [info ] [Thread-1 (]: 3 of 3 START sql view model ecomm_transactions_db.my_second_dbt_model .......... [RUN]
+[0m21:25:59.517985 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_mysql_project.my_first_dbt_model, now model.dbt_mysql_project.my_second_dbt_model)
+[0m21:25:59.518432 [debug] [Thread-1 (]: Began compiling node model.dbt_mysql_project.my_second_dbt_model
+[0m21:25:59.574490 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:25:59.575132 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.my_second_dbt_model (compile): 21:25:59.518692 => 21:25:59.575011
+[0m21:25:59.575340 [debug] [Thread-1 (]: Began executing node model.dbt_mysql_project.my_second_dbt_model
+[0m21:25:59.577509 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:25:59.577872 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:25:59.578059 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: BEGIN
+[0m21:25:59.578227 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:25:59.937854 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:25:59.939223 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:25:59.940433 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+
+  create view `ecomm_transactions_db`.`my_second_dbt_model__dbt_tmp`
+    
+    
+  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from `ecomm_transactions_db`.`my_first_dbt_model`
+where id = 1
+  );
+[0m21:26:00.351393 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:26:00.354790 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:26:00.355123 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+
+    drop view if exists `ecomm_transactions_db`.`my_second_dbt_model` cascade
+  
+[0m21:26:00.444110 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:26:00.445230 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:26:00.445508 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+
+    rename table `ecomm_transactions_db`.`my_second_dbt_model__dbt_tmp` to `ecomm_transactions_db`.`my_second_dbt_model`
+  
+[0m21:26:00.540765 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:26:00.543306 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: COMMIT
+[0m21:26:00.543831 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:26:00.544287 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: COMMIT
+[0m21:26:00.630435 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:26:00.634368 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:26:00.634987 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+drop view if exists `ecomm_transactions_db`.`my_second_dbt_model__dbt_backup`
+[0m21:26:00.727986 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:26:00.732501 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.my_second_dbt_model (execute): 21:25:59.575453 => 21:26:00.732103
+[0m21:26:00.733132 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: Close
+[0m21:26:00.734586 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c9feaf5a-25c1-4782-aaf6-e0a2478c6b69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bb43020>]}
+[0m21:26:00.735423 [info ] [Thread-1 (]: 3 of 3 OK created sql view model ecomm_transactions_db.my_second_dbt_model ..... [[32mSUCCESS 0[0m in 1.22s]
+[0m21:26:00.736083 [debug] [Thread-1 (]: Finished running node model.dbt_mysql_project.my_second_dbt_model
+[0m21:26:00.737632 [debug] [MainThread]: Using mysql connection "master"
+[0m21:26:00.738077 [debug] [MainThread]: On master: BEGIN
+[0m21:26:00.738433 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:26:01.109250 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:26:01.110455 [debug] [MainThread]: On master: COMMIT
+[0m21:26:01.111321 [debug] [MainThread]: Using mysql connection "master"
+[0m21:26:01.112001 [debug] [MainThread]: On master: COMMIT
+[0m21:26:01.197579 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:26:01.198647 [debug] [MainThread]: On master: Close
+[0m21:26:01.200878 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:26:01.201400 [debug] [MainThread]: Connection 'model.dbt_mysql_project.my_second_dbt_model' was properly closed.
+[0m21:26:01.201956 [info ] [MainThread]: 
+[0m21:26:01.202541 [info ] [MainThread]: Finished running 2 view models, 1 table model in 0 hours 0 minutes and 4.78 seconds (4.78s).
+[0m21:26:01.203486 [debug] [MainThread]: Command end result
+[0m21:26:01.214109 [info ] [MainThread]: 
+[0m21:26:01.214547 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m21:26:01.214707 [info ] [MainThread]: 
+[0m21:26:01.214858 [error] [MainThread]:   Database Error in model ecomm_total_user_sales (models/ecomm_total_user_sales.sql)
+  1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT
+          user_id,
+          product_category,
+          SUM(purchase_amount) A' at line 8
+  compiled Code at target/run/dbt_mysql_project/models/ecomm_total_user_sales.sql
+[0m21:26:01.215006 [info ] [MainThread]: 
+[0m21:26:01.215159 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 TOTAL=3
+[0m21:26:01.217170 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 5.3908324, "process_user_time": 1.700881, "process_kernel_time": 0.138264, "process_mem_max_rss": "123666432", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m21:26:01.217518 [debug] [MainThread]: Command `dbt run` failed at 21:26:01.217450 after 5.39 seconds
+[0m21:26:01.217739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108111580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10805b530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a7b3b0>]}
+[0m21:26:01.217926 [debug] [MainThread]: Flushing usage events
+[0m21:32:11.375809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118ce3920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118635640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118d09220>]}
+
+
+============================== 21:32:11.378042 | 3a5a5f2f-29f4-4e00-9ef5-eb925fbeb4d3 ==============================
+[0m21:32:11.378042 [info ] [MainThread]: Running with dbt=1.7.18
+[0m21:32:11.378340 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/shanr/Desktop/dbt_ecommerce_project/dbt_mysql_project/logs', 'version_check': 'True', 'profiles_dir': '/Users/shanr/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m21:32:11.447035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3a5a5f2f-29f4-4e00-9ef5-eb925fbeb4d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118635640>]}
+[0m21:32:11.473333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3a5a5f2f-29f4-4e00-9ef5-eb925fbeb4d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118cb2150>]}
+[0m21:32:11.473900 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m21:32:11.483279 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m21:32:11.498944 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:32:11.499364 [debug] [MainThread]: Partial parsing: updated file: dbt_mysql_project://models/ecomm_total_user_sales.sql
+[0m21:32:11.623666 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3a5a5f2f-29f4-4e00-9ef5-eb925fbeb4d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a2fd640>]}
+[0m21:32:11.629089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3a5a5f2f-29f4-4e00-9ef5-eb925fbeb4d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1193011c0>]}
+[0m21:32:11.629341 [info ] [MainThread]: Found 3 models, 10 tests, 1 source, 0 exposures, 0 metrics, 375 macros, 0 groups, 0 semantic models
+[0m21:32:11.629541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3a5a5f2f-29f4-4e00-9ef5-eb925fbeb4d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a26cda0>]}
+[0m21:32:11.630554 [info ] [MainThread]: 
+[0m21:32:11.630961 [debug] [MainThread]: Acquiring new mysql connection 'master'
+[0m21:32:11.631556 [debug] [ThreadPool]: Acquiring new mysql connection 'list_schemas'
+[0m21:32:11.636427 [debug] [ThreadPool]: Using mysql connection "list_schemas"
+[0m21:32:11.636639 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "connection_name": "list_schemas"} */
+select distinct schema_name
+        from information_schema.schemata
+[0m21:32:11.636921 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:32:12.071087 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.0 seconds
+[0m21:32:12.076739 [debug] [ThreadPool]: On list_schemas: Close
+[0m21:32:12.079939 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_schemas, now list_None_ecomm_transactions_db)
+[0m21:32:12.086437 [debug] [ThreadPool]: Using mysql connection "list_None_ecomm_transactions_db"
+[0m21:32:12.086846 [debug] [ThreadPool]: On list_None_ecomm_transactions_db: BEGIN
+[0m21:32:12.087162 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:32:12.454883 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:32:12.457356 [debug] [ThreadPool]: Using mysql connection "list_None_ecomm_transactions_db"
+[0m21:32:12.458697 [debug] [ThreadPool]: On list_None_ecomm_transactions_db: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "connection_name": "list_None_ecomm_transactions_db"} */
+select
+      null as "database",
+      table_name as name,
+      table_schema as "schema",
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type
+      end as table_type
+    from information_schema.tables
+    where table_schema = 'ecomm_transactions_db'
+  
+[0m21:32:12.549230 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.0 seconds
+[0m21:32:12.554068 [debug] [ThreadPool]: On list_None_ecomm_transactions_db: ROLLBACK
+[0m21:32:12.595433 [debug] [ThreadPool]: On list_None_ecomm_transactions_db: Close
+[0m21:32:12.600422 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3a5a5f2f-29f4-4e00-9ef5-eb925fbeb4d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118b89910>]}
+[0m21:32:12.601259 [debug] [MainThread]: Using mysql connection "master"
+[0m21:32:12.601705 [debug] [MainThread]: On master: BEGIN
+[0m21:32:12.602118 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:32:12.974184 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:32:12.975385 [debug] [MainThread]: On master: COMMIT
+[0m21:32:12.976251 [debug] [MainThread]: Using mysql connection "master"
+[0m21:32:12.977007 [debug] [MainThread]: On master: COMMIT
+[0m21:32:13.065379 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:32:13.066426 [debug] [MainThread]: On master: Close
+[0m21:32:13.068314 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:32:13.068895 [info ] [MainThread]: 
+[0m21:32:13.070843 [debug] [Thread-1 (]: Began running node model.dbt_mysql_project.ecomm_total_user_sales
+[0m21:32:13.071233 [info ] [Thread-1 (]: 1 of 3 START sql view model ecomm_transactions_db.ecomm_total_user_sales ....... [RUN]
+[0m21:32:13.071667 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_None_ecomm_transactions_db, now model.dbt_mysql_project.ecomm_total_user_sales)
+[0m21:32:13.072095 [debug] [Thread-1 (]: Began compiling node model.dbt_mysql_project.ecomm_total_user_sales
+[0m21:32:13.076517 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_mysql_project.ecomm_total_user_sales"
+[0m21:32:13.077427 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.ecomm_total_user_sales (compile): 21:32:13.072240 => 21:32:13.077245
+[0m21:32:13.077664 [debug] [Thread-1 (]: Began executing node model.dbt_mysql_project.ecomm_total_user_sales
+[0m21:32:13.093943 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_mysql_project.ecomm_total_user_sales"
+[0m21:32:13.094433 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.ecomm_total_user_sales"
+[0m21:32:13.094611 [debug] [Thread-1 (]: On model.dbt_mysql_project.ecomm_total_user_sales: BEGIN
+[0m21:32:13.094772 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:32:13.460848 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:32:13.462828 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.ecomm_total_user_sales"
+[0m21:32:13.464019 [debug] [Thread-1 (]: On model.dbt_mysql_project.ecomm_total_user_sales: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.ecomm_total_user_sales"} */
+
+  create view `ecomm_transactions_db`.`ecomm_total_user_sales__dbt_tmp`
+    
+    
+  as (
+    WITH user_totals AS (
+    SELECT
+        user_id,
+        product_category,
+        SUM(purchase_amount) AS total_sales
+    FROM `ecomm_transactions_db`.`transaction_id`
+    GROUP BY 1,2
+),
+sales_by_category AS (
+SELECT
+    user_id,
+    SUM(CASE WHEN product_category = 'App' THEN total_sales ELSE 0 END)AS app_sales,
+    SUM(CASE WHEN product_category = 'Game' THEN total_sales ELSE 0 END) AS game_sales,
+    SUM(CASE WHEN product_category = 'In-app Purchases' THEN total_sales ELSE 0) END AS inapp_sales
+FROM user_totals
+GROUP BY 1
+)
+SELECT
+    user_id,
+    app_sales AS app_sales,
+    game_sales AS game_sales,
+    inapp_sales AS inapp_sales,
+    app_sales + game_sales + inapp_sales AS total_sales
+FROM sales_by_category
+  );
+[0m21:32:13.550847 [debug] [Thread-1 (]: mysql adapter: MySQL error: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') END AS inapp_sales
+FROM user_totals
+GROUP BY 1
+)
+SELECT
+    user_id,
+    app_s' at line 20
+[0m21:32:13.552162 [debug] [Thread-1 (]: On model.dbt_mysql_project.ecomm_total_user_sales: ROLLBACK
+[0m21:32:13.597147 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.ecomm_total_user_sales (execute): 21:32:13.077781 => 21:32:13.596278
+[0m21:32:13.598497 [debug] [Thread-1 (]: On model.dbt_mysql_project.ecomm_total_user_sales: Close
+[0m21:32:13.609152 [debug] [Thread-1 (]: Database Error in model ecomm_total_user_sales (models/ecomm_total_user_sales.sql)
+  1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') END AS inapp_sales
+  FROM user_totals
+  GROUP BY 1
+  )
+  SELECT
+      user_id,
+      app_s' at line 20
+  compiled Code at target/run/dbt_mysql_project/models/ecomm_total_user_sales.sql
+[0m21:32:13.609786 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3a5a5f2f-29f4-4e00-9ef5-eb925fbeb4d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a35cd70>]}
+[0m21:32:13.610389 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model ecomm_transactions_db.ecomm_total_user_sales  [[31mERROR[0m in 0.54s]
+[0m21:32:13.610925 [debug] [Thread-1 (]: Finished running node model.dbt_mysql_project.ecomm_total_user_sales
+[0m21:32:13.611307 [debug] [Thread-1 (]: Began running node model.dbt_mysql_project.my_first_dbt_model
+[0m21:32:13.612398 [info ] [Thread-1 (]: 2 of 3 START sql table model ecomm_transactions_db.my_first_dbt_model .......... [RUN]
+[0m21:32:13.613092 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_mysql_project.ecomm_total_user_sales, now model.dbt_mysql_project.my_first_dbt_model)
+[0m21:32:13.613408 [debug] [Thread-1 (]: Began compiling node model.dbt_mysql_project.my_first_dbt_model
+[0m21:32:13.616168 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:32:13.616970 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.my_first_dbt_model (compile): 21:32:13.613592 => 21:32:13.616824
+[0m21:32:13.617213 [debug] [Thread-1 (]: Began executing node model.dbt_mysql_project.my_first_dbt_model
+[0m21:32:13.631978 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:32:13.632567 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:32:13.632795 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: BEGIN
+[0m21:32:13.632986 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:32:13.994154 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:32:13.994448 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:32:13.994640 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+
+  
+    
+
+  create  table
+    `ecomm_transactions_db`.`my_first_dbt_model__dbt_tmp`
+    
+    
+      as
+    
+    (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    )
+
+  
+[0m21:32:14.116271 [debug] [Thread-1 (]: SQL status: SUCCESS 2 in 0.0 seconds
+[0m21:32:14.121284 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:32:14.121528 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+
+    drop table if exists `ecomm_transactions_db`.`my_first_dbt_model__dbt_backup` cascade
+  
+[0m21:32:14.209396 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:32:14.210327 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:32:14.210636 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+
+    rename table `ecomm_transactions_db`.`my_first_dbt_model` to `ecomm_transactions_db`.`my_first_dbt_model__dbt_backup`
+  
+[0m21:32:14.318173 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:32:14.325388 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:32:14.325990 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+
+    drop table if exists `ecomm_transactions_db`.`my_first_dbt_model` cascade
+  
+[0m21:32:14.418848 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:32:14.422600 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:32:14.423279 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+
+    rename table `ecomm_transactions_db`.`my_first_dbt_model__dbt_tmp` to `ecomm_transactions_db`.`my_first_dbt_model`
+  
+[0m21:32:14.533977 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:32:14.559658 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: COMMIT
+[0m21:32:14.560063 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:32:14.560369 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: COMMIT
+[0m21:32:14.649817 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:32:14.659013 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:32:14.659608 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+drop table if exists `ecomm_transactions_db`.`my_first_dbt_model__dbt_backup`
+[0m21:32:14.759698 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:32:14.762354 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.my_first_dbt_model (execute): 21:32:13.617600 => 21:32:14.761946
+[0m21:32:14.763003 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: Close
+[0m21:32:14.764355 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3a5a5f2f-29f4-4e00-9ef5-eb925fbeb4d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a7a8080>]}
+[0m21:32:14.764904 [info ] [Thread-1 (]: 2 of 3 OK created sql table model ecomm_transactions_db.my_first_dbt_model ..... [[32mSUCCESS 2[0m in 1.15s]
+[0m21:32:14.765356 [debug] [Thread-1 (]: Finished running node model.dbt_mysql_project.my_first_dbt_model
+[0m21:32:14.766025 [debug] [Thread-1 (]: Began running node model.dbt_mysql_project.my_second_dbt_model
+[0m21:32:14.766575 [info ] [Thread-1 (]: 3 of 3 START sql view model ecomm_transactions_db.my_second_dbt_model .......... [RUN]
+[0m21:32:14.767242 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_mysql_project.my_first_dbt_model, now model.dbt_mysql_project.my_second_dbt_model)
+[0m21:32:14.767518 [debug] [Thread-1 (]: Began compiling node model.dbt_mysql_project.my_second_dbt_model
+[0m21:32:14.769741 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:32:14.770369 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.my_second_dbt_model (compile): 21:32:14.767670 => 21:32:14.770226
+[0m21:32:14.770594 [debug] [Thread-1 (]: Began executing node model.dbt_mysql_project.my_second_dbt_model
+[0m21:32:14.773200 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:32:14.773832 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:32:14.774211 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: BEGIN
+[0m21:32:14.774440 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:32:15.150521 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:32:15.152363 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:32:15.153499 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+
+  create view `ecomm_transactions_db`.`my_second_dbt_model__dbt_tmp`
+    
+    
+  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from `ecomm_transactions_db`.`my_first_dbt_model`
+where id = 1
+  );
+[0m21:32:15.267754 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:32:15.273761 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:32:15.274202 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+
+    drop view if exists `ecomm_transactions_db`.`my_second_dbt_model__dbt_backup` cascade
+  
+[0m21:32:15.362116 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:32:15.366112 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:32:15.367211 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+
+    rename table `ecomm_transactions_db`.`my_second_dbt_model` to `ecomm_transactions_db`.`my_second_dbt_model__dbt_backup`
+  
+[0m21:32:15.461655 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:32:15.467331 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:32:15.467945 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+
+    drop view if exists `ecomm_transactions_db`.`my_second_dbt_model` cascade
+  
+[0m21:32:15.558970 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:32:15.562632 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:32:15.563193 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+
+    rename table `ecomm_transactions_db`.`my_second_dbt_model__dbt_tmp` to `ecomm_transactions_db`.`my_second_dbt_model`
+  
+[0m21:32:15.654852 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:32:15.659834 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: COMMIT
+[0m21:32:15.660387 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:32:15.660840 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: COMMIT
+[0m21:32:15.752214 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:32:15.759857 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:32:15.760264 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+drop view if exists `ecomm_transactions_db`.`my_second_dbt_model__dbt_backup`
+[0m21:32:15.852471 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:32:15.853647 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.my_second_dbt_model (execute): 21:32:14.770719 => 21:32:15.853499
+[0m21:32:15.853905 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: Close
+[0m21:32:15.854534 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3a5a5f2f-29f4-4e00-9ef5-eb925fbeb4d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a36df10>]}
+[0m21:32:15.854908 [info ] [Thread-1 (]: 3 of 3 OK created sql view model ecomm_transactions_db.my_second_dbt_model ..... [[32mSUCCESS 0[0m in 1.09s]
+[0m21:32:15.855257 [debug] [Thread-1 (]: Finished running node model.dbt_mysql_project.my_second_dbt_model
+[0m21:32:15.856168 [debug] [MainThread]: Using mysql connection "master"
+[0m21:32:15.856366 [debug] [MainThread]: On master: BEGIN
+[0m21:32:15.856536 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:32:16.231298 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:32:16.233056 [debug] [MainThread]: On master: COMMIT
+[0m21:32:16.233932 [debug] [MainThread]: Using mysql connection "master"
+[0m21:32:16.235080 [debug] [MainThread]: On master: COMMIT
+[0m21:32:16.321027 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:32:16.322268 [debug] [MainThread]: On master: Close
+[0m21:32:16.324100 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:32:16.324614 [debug] [MainThread]: Connection 'model.dbt_mysql_project.my_second_dbt_model' was properly closed.
+[0m21:32:16.325160 [info ] [MainThread]: 
+[0m21:32:16.325697 [info ] [MainThread]: Finished running 2 view models, 1 table model in 0 hours 0 minutes and 4.69 seconds (4.69s).
+[0m21:32:16.327048 [debug] [MainThread]: Command end result
+[0m21:32:16.337007 [info ] [MainThread]: 
+[0m21:32:16.337518 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m21:32:16.337839 [info ] [MainThread]: 
+[0m21:32:16.338152 [error] [MainThread]:   Database Error in model ecomm_total_user_sales (models/ecomm_total_user_sales.sql)
+  1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') END AS inapp_sales
+  FROM user_totals
+  GROUP BY 1
+  )
+  SELECT
+      user_id,
+      app_s' at line 20
+  compiled Code at target/run/dbt_mysql_project/models/ecomm_total_user_sales.sql
+[0m21:32:16.338700 [info ] [MainThread]: 
+[0m21:32:16.339183 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 TOTAL=3
+[0m21:32:16.341189 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 4.992611, "process_user_time": 1.366576, "process_kernel_time": 0.135191, "process_mem_max_rss": "125779968", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m21:32:16.341961 [debug] [MainThread]: Command `dbt run` failed at 21:32:16.341794 after 4.99 seconds
+[0m21:32:16.342512 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118a92600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118b3a030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a7dfe60>]}
+[0m21:32:16.342885 [debug] [MainThread]: Flushing usage events
+[0m21:34:20.348728 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106274fb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062cd640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062cd3a0>]}
+
+
+============================== 21:34:20.351184 | e70ec858-2b0b-44af-a903-6bf63ffd3f13 ==============================
+[0m21:34:20.351184 [info ] [MainThread]: Running with dbt=1.7.18
+[0m21:34:20.351498 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/shanr/Desktop/dbt_ecommerce_project/dbt_mysql_project/logs', 'profiles_dir': '/Users/shanr/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m21:34:20.425538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e70ec858-2b0b-44af-a903-6bf63ffd3f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062ec440>]}
+[0m21:34:20.453185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e70ec858-2b0b-44af-a903-6bf63ffd3f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104cc88c0>]}
+[0m21:34:20.453882 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m21:34:20.463481 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m21:34:20.478419 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:34:20.478828 [debug] [MainThread]: Partial parsing: updated file: dbt_mysql_project://models/ecomm_total_user_sales.sql
+[0m21:34:20.608461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e70ec858-2b0b-44af-a903-6bf63ffd3f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1208b65a0>]}
+[0m21:34:20.614151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e70ec858-2b0b-44af-a903-6bf63ffd3f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ba8ec0>]}
+[0m21:34:20.614404 [info ] [MainThread]: Found 3 models, 10 tests, 1 source, 0 exposures, 0 metrics, 375 macros, 0 groups, 0 semantic models
+[0m21:34:20.614601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e70ec858-2b0b-44af-a903-6bf63ffd3f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1208fe4e0>]}
+[0m21:34:20.615711 [info ] [MainThread]: 
+[0m21:34:20.616132 [debug] [MainThread]: Acquiring new mysql connection 'master'
+[0m21:34:20.616762 [debug] [ThreadPool]: Acquiring new mysql connection 'list_schemas'
+[0m21:34:20.621645 [debug] [ThreadPool]: Using mysql connection "list_schemas"
+[0m21:34:20.621885 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "connection_name": "list_schemas"} */
+select distinct schema_name
+        from information_schema.schemata
+[0m21:34:20.622048 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:34:21.100168 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.0 seconds
+[0m21:34:21.106000 [debug] [ThreadPool]: On list_schemas: Close
+[0m21:34:21.109735 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_schemas, now list_None_ecomm_transactions_db)
+[0m21:34:21.117385 [debug] [ThreadPool]: Using mysql connection "list_None_ecomm_transactions_db"
+[0m21:34:21.117885 [debug] [ThreadPool]: On list_None_ecomm_transactions_db: BEGIN
+[0m21:34:21.118270 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:34:21.544890 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:34:21.546336 [debug] [ThreadPool]: Using mysql connection "list_None_ecomm_transactions_db"
+[0m21:34:21.547539 [debug] [ThreadPool]: On list_None_ecomm_transactions_db: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "connection_name": "list_None_ecomm_transactions_db"} */
+select
+      null as "database",
+      table_name as name,
+      table_schema as "schema",
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type
+      end as table_type
+    from information_schema.tables
+    where table_schema = 'ecomm_transactions_db'
+  
+[0m21:34:21.647478 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.0 seconds
+[0m21:34:21.651664 [debug] [ThreadPool]: On list_None_ecomm_transactions_db: ROLLBACK
+[0m21:34:21.701150 [debug] [ThreadPool]: On list_None_ecomm_transactions_db: Close
+[0m21:34:21.705431 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e70ec858-2b0b-44af-a903-6bf63ffd3f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bf0740>]}
+[0m21:34:21.706293 [debug] [MainThread]: Using mysql connection "master"
+[0m21:34:21.706831 [debug] [MainThread]: On master: BEGIN
+[0m21:34:21.707246 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:34:22.126743 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:34:22.128314 [debug] [MainThread]: On master: COMMIT
+[0m21:34:22.129244 [debug] [MainThread]: Using mysql connection "master"
+[0m21:34:22.130127 [debug] [MainThread]: On master: COMMIT
+[0m21:34:22.233388 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:34:22.234625 [debug] [MainThread]: On master: Close
+[0m21:34:22.237153 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:34:22.237839 [info ] [MainThread]: 
+[0m21:34:22.241547 [debug] [Thread-1 (]: Began running node model.dbt_mysql_project.ecomm_total_user_sales
+[0m21:34:22.242409 [info ] [Thread-1 (]: 1 of 3 START sql view model ecomm_transactions_db.ecomm_total_user_sales ....... [RUN]
+[0m21:34:22.243655 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_None_ecomm_transactions_db, now model.dbt_mysql_project.ecomm_total_user_sales)
+[0m21:34:22.244374 [debug] [Thread-1 (]: Began compiling node model.dbt_mysql_project.ecomm_total_user_sales
+[0m21:34:22.254048 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_mysql_project.ecomm_total_user_sales"
+[0m21:34:22.255467 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.ecomm_total_user_sales (compile): 21:34:22.244740 => 21:34:22.255118
+[0m21:34:22.255928 [debug] [Thread-1 (]: Began executing node model.dbt_mysql_project.ecomm_total_user_sales
+[0m21:34:22.281997 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_mysql_project.ecomm_total_user_sales"
+[0m21:34:22.282679 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.ecomm_total_user_sales"
+[0m21:34:22.282929 [debug] [Thread-1 (]: On model.dbt_mysql_project.ecomm_total_user_sales: BEGIN
+[0m21:34:22.283143 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:34:22.698255 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:34:22.698676 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.ecomm_total_user_sales"
+[0m21:34:22.698967 [debug] [Thread-1 (]: On model.dbt_mysql_project.ecomm_total_user_sales: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.ecomm_total_user_sales"} */
+
+  create view `ecomm_transactions_db`.`ecomm_total_user_sales__dbt_tmp`
+    
+    
+  as (
+    WITH user_totals AS (
+    SELECT
+        user_id,
+        product_category,
+        SUM(purchase_amount) AS total_sales
+    FROM `ecomm_transactions_db`.`transaction_id`
+    GROUP BY 1,2
+),
+sales_by_category AS (
+SELECT
+    user_id,
+    SUM(CASE WHEN product_category = 'App' THEN total_sales ELSE 0 END)AS app_sales,
+    SUM(CASE WHEN product_category = 'Game' THEN total_sales ELSE 0 END) AS game_sales,
+    SUM(CASE WHEN product_category = 'In-app Purchases' THEN total_sales ELSE 0 END) AS inapp_sales
+FROM user_totals
+GROUP BY 1
+)
+SELECT
+    user_id,
+    app_sales AS app_sales,
+    game_sales AS game_sales,
+    inapp_sales AS inapp_sales,
+    app_sales + game_sales + inapp_sales AS total_sales
+FROM sales_by_category
+  );
+[0m21:34:22.819527 [debug] [Thread-1 (]: mysql adapter: MySQL error: 1146 (42S02): Table 'ecomm_transactions_db.transaction_id' doesn't exist
+[0m21:34:22.820098 [debug] [Thread-1 (]: On model.dbt_mysql_project.ecomm_total_user_sales: ROLLBACK
+[0m21:34:22.869115 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.ecomm_total_user_sales (execute): 21:34:22.256163 => 21:34:22.868754
+[0m21:34:22.869637 [debug] [Thread-1 (]: On model.dbt_mysql_project.ecomm_total_user_sales: Close
+[0m21:34:22.876357 [debug] [Thread-1 (]: Database Error in model ecomm_total_user_sales (models/ecomm_total_user_sales.sql)
+  1146 (42S02): Table 'ecomm_transactions_db.transaction_id' doesn't exist
+  compiled Code at target/run/dbt_mysql_project/models/ecomm_total_user_sales.sql
+[0m21:34:22.877026 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e70ec858-2b0b-44af-a903-6bf63ffd3f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1208b77a0>]}
+[0m21:34:22.877728 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model ecomm_transactions_db.ecomm_total_user_sales  [[31mERROR[0m in 0.63s]
+[0m21:34:22.878332 [debug] [Thread-1 (]: Finished running node model.dbt_mysql_project.ecomm_total_user_sales
+[0m21:34:22.878853 [debug] [Thread-1 (]: Began running node model.dbt_mysql_project.my_first_dbt_model
+[0m21:34:22.880221 [info ] [Thread-1 (]: 2 of 3 START sql table model ecomm_transactions_db.my_first_dbt_model .......... [RUN]
+[0m21:34:22.881014 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_mysql_project.ecomm_total_user_sales, now model.dbt_mysql_project.my_first_dbt_model)
+[0m21:34:22.881378 [debug] [Thread-1 (]: Began compiling node model.dbt_mysql_project.my_first_dbt_model
+[0m21:34:22.884540 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:34:22.885266 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.my_first_dbt_model (compile): 21:34:22.881595 => 21:34:22.885095
+[0m21:34:22.885558 [debug] [Thread-1 (]: Began executing node model.dbt_mysql_project.my_first_dbt_model
+[0m21:34:22.922182 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:34:22.922813 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:34:22.923013 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: BEGIN
+[0m21:34:22.923188 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:34:23.347468 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:34:23.349306 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:34:23.350235 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+
+  
+    
+
+  create  table
+    `ecomm_transactions_db`.`my_first_dbt_model__dbt_tmp`
+    
+    
+      as
+    
+    (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    )
+
+  
+[0m21:34:23.505115 [debug] [Thread-1 (]: SQL status: SUCCESS 2 in 0.0 seconds
+[0m21:34:23.517254 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:34:23.517901 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+
+    drop table if exists `ecomm_transactions_db`.`my_first_dbt_model__dbt_backup` cascade
+  
+[0m21:34:23.625484 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:34:23.629443 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:34:23.630557 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+
+    rename table `ecomm_transactions_db`.`my_first_dbt_model` to `ecomm_transactions_db`.`my_first_dbt_model__dbt_backup`
+  
+[0m21:34:23.753375 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:34:23.758571 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:34:23.758997 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+
+    drop table if exists `ecomm_transactions_db`.`my_first_dbt_model` cascade
+  
+[0m21:34:23.862754 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:34:23.870482 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:34:23.871101 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+
+    rename table `ecomm_transactions_db`.`my_first_dbt_model__dbt_tmp` to `ecomm_transactions_db`.`my_first_dbt_model`
+  
+[0m21:34:23.992003 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:34:24.018288 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: COMMIT
+[0m21:34:24.018721 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:34:24.019026 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: COMMIT
+[0m21:34:24.121136 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:34:24.130107 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:34:24.130665 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+drop table if exists `ecomm_transactions_db`.`my_first_dbt_model__dbt_backup`
+[0m21:34:24.247321 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:34:24.251572 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.my_first_dbt_model (execute): 21:34:22.885719 => 21:34:24.251246
+[0m21:34:24.252139 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: Close
+[0m21:34:24.253580 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e70ec858-2b0b-44af-a903-6bf63ffd3f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120caa9f0>]}
+[0m21:34:24.254446 [info ] [Thread-1 (]: 2 of 3 OK created sql table model ecomm_transactions_db.my_first_dbt_model ..... [[32mSUCCESS 2[0m in 1.37s]
+[0m21:34:24.255245 [debug] [Thread-1 (]: Finished running node model.dbt_mysql_project.my_first_dbt_model
+[0m21:34:24.256320 [debug] [Thread-1 (]: Began running node model.dbt_mysql_project.my_second_dbt_model
+[0m21:34:24.256965 [info ] [Thread-1 (]: 3 of 3 START sql view model ecomm_transactions_db.my_second_dbt_model .......... [RUN]
+[0m21:34:24.257776 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_mysql_project.my_first_dbt_model, now model.dbt_mysql_project.my_second_dbt_model)
+[0m21:34:24.258181 [debug] [Thread-1 (]: Began compiling node model.dbt_mysql_project.my_second_dbt_model
+[0m21:34:24.261909 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:34:24.263229 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.my_second_dbt_model (compile): 21:34:24.258424 => 21:34:24.262962
+[0m21:34:24.263639 [debug] [Thread-1 (]: Began executing node model.dbt_mysql_project.my_second_dbt_model
+[0m21:34:24.267809 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:34:24.268532 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:34:24.268899 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: BEGIN
+[0m21:34:24.269227 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:34:24.685421 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:34:24.686994 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:34:24.688347 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+
+  create view `ecomm_transactions_db`.`my_second_dbt_model__dbt_tmp`
+    
+    
+  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from `ecomm_transactions_db`.`my_first_dbt_model`
+where id = 1
+  );
+[0m21:34:24.795010 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:34:24.801627 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:34:24.802099 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+
+    drop view if exists `ecomm_transactions_db`.`my_second_dbt_model__dbt_backup` cascade
+  
+[0m21:34:24.902944 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:34:24.906821 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:34:24.907900 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+
+    rename table `ecomm_transactions_db`.`my_second_dbt_model` to `ecomm_transactions_db`.`my_second_dbt_model__dbt_backup`
+  
+[0m21:34:25.023973 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:34:25.026446 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:34:25.026726 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+
+    drop view if exists `ecomm_transactions_db`.`my_second_dbt_model` cascade
+  
+[0m21:34:25.125057 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:34:25.126305 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:34:25.126723 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+
+    rename table `ecomm_transactions_db`.`my_second_dbt_model__dbt_tmp` to `ecomm_transactions_db`.`my_second_dbt_model`
+  
+[0m21:34:25.233420 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:34:25.238674 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: COMMIT
+[0m21:34:25.239357 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:34:25.239862 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: COMMIT
+[0m21:34:25.342396 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:34:25.347656 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:34:25.348248 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+drop view if exists `ecomm_transactions_db`.`my_second_dbt_model__dbt_backup`
+[0m21:34:25.454118 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:34:25.459057 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.my_second_dbt_model (execute): 21:34:24.263852 => 21:34:25.458391
+[0m21:34:25.459782 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: Close
+[0m21:34:25.461714 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e70ec858-2b0b-44af-a903-6bf63ffd3f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120cab6e0>]}
+[0m21:34:25.462660 [info ] [Thread-1 (]: 3 of 3 OK created sql view model ecomm_transactions_db.my_second_dbt_model ..... [[32mSUCCESS 0[0m in 1.20s]
+[0m21:34:25.463486 [debug] [Thread-1 (]: Finished running node model.dbt_mysql_project.my_second_dbt_model
+[0m21:34:25.465377 [debug] [MainThread]: Using mysql connection "master"
+[0m21:34:25.465776 [debug] [MainThread]: On master: BEGIN
+[0m21:34:25.466111 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:34:25.893558 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:34:25.895600 [debug] [MainThread]: On master: COMMIT
+[0m21:34:25.896538 [debug] [MainThread]: Using mysql connection "master"
+[0m21:34:25.897361 [debug] [MainThread]: On master: COMMIT
+[0m21:34:25.997776 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:34:25.999071 [debug] [MainThread]: On master: Close
+[0m21:34:26.001393 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:34:26.001917 [debug] [MainThread]: Connection 'model.dbt_mysql_project.my_second_dbt_model' was properly closed.
+[0m21:34:26.002611 [info ] [MainThread]: 
+[0m21:34:26.003479 [info ] [MainThread]: Finished running 2 view models, 1 table model in 0 hours 0 minutes and 5.39 seconds (5.39s).
+[0m21:34:26.004952 [debug] [MainThread]: Command end result
+[0m21:34:26.014691 [info ] [MainThread]: 
+[0m21:34:26.015178 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m21:34:26.015500 [info ] [MainThread]: 
+[0m21:34:26.015816 [error] [MainThread]:   Database Error in model ecomm_total_user_sales (models/ecomm_total_user_sales.sql)
+  1146 (42S02): Table 'ecomm_transactions_db.transaction_id' doesn't exist
+  compiled Code at target/run/dbt_mysql_project/models/ecomm_total_user_sales.sql
+[0m21:34:26.016119 [info ] [MainThread]: 
+[0m21:34:26.016453 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 TOTAL=3
+[0m21:34:26.018341 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 5.6985555, "process_user_time": 1.421212, "process_kernel_time": 0.147491, "process_mem_max_rss": "124420096", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m21:34:26.019023 [debug] [MainThread]: Command `dbt run` failed at 21:34:26.018897 after 5.70 seconds
+[0m21:34:26.019660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061b0e00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120cdb230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120848440>]}
+[0m21:34:26.020195 [debug] [MainThread]: Flushing usage events
+[0m21:35:48.974279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109875220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1098cd460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1098cd1c0>]}
+
+
+============================== 21:35:48.976446 | 3d7581b3-5c5d-4522-95e8-c57c1bf40bac ==============================
+[0m21:35:48.976446 [info ] [MainThread]: Running with dbt=1.7.18
+[0m21:35:48.976744 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/shanr/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/shanr/Desktop/dbt_ecommerce_project/dbt_mysql_project/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m21:35:49.048717 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3d7581b3-5c5d-4522-95e8-c57c1bf40bac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087e1820>]}
+[0m21:35:49.074851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3d7581b3-5c5d-4522-95e8-c57c1bf40bac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109ad2cc0>]}
+[0m21:35:49.075390 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m21:35:49.084621 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m21:35:49.099393 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:35:49.099937 [debug] [MainThread]: Partial parsing: updated file: dbt_mysql_project://models/schema.yml
+[0m21:35:49.253575 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3d7581b3-5c5d-4522-95e8-c57c1bf40bac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad948c0>]}
+[0m21:35:49.258490 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3d7581b3-5c5d-4522-95e8-c57c1bf40bac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c002c0>]}
+[0m21:35:49.258742 [info ] [MainThread]: Found 3 models, 10 tests, 1 source, 0 exposures, 0 metrics, 375 macros, 0 groups, 0 semantic models
+[0m21:35:49.258937 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3d7581b3-5c5d-4522-95e8-c57c1bf40bac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad2e930>]}
+[0m21:35:49.259943 [info ] [MainThread]: 
+[0m21:35:49.260344 [debug] [MainThread]: Acquiring new mysql connection 'master'
+[0m21:35:49.260986 [debug] [ThreadPool]: Acquiring new mysql connection 'list_schemas'
+[0m21:35:49.266072 [debug] [ThreadPool]: Using mysql connection "list_schemas"
+[0m21:35:49.266313 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "connection_name": "list_schemas"} */
+select distinct schema_name
+        from information_schema.schemata
+[0m21:35:49.266478 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:35:49.726422 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.0 seconds
+[0m21:35:49.731957 [debug] [ThreadPool]: On list_schemas: Close
+[0m21:35:49.735410 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_schemas, now list_None_ecomm_transactions_db)
+[0m21:35:49.743093 [debug] [ThreadPool]: Using mysql connection "list_None_ecomm_transactions_db"
+[0m21:35:49.743545 [debug] [ThreadPool]: On list_None_ecomm_transactions_db: BEGIN
+[0m21:35:49.743912 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:35:50.178365 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:50.179699 [debug] [ThreadPool]: Using mysql connection "list_None_ecomm_transactions_db"
+[0m21:35:50.180689 [debug] [ThreadPool]: On list_None_ecomm_transactions_db: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "connection_name": "list_None_ecomm_transactions_db"} */
+select
+      null as "database",
+      table_name as name,
+      table_schema as "schema",
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type
+      end as table_type
+    from information_schema.tables
+    where table_schema = 'ecomm_transactions_db'
+  
+[0m21:35:50.294783 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.0 seconds
+[0m21:35:50.299298 [debug] [ThreadPool]: On list_None_ecomm_transactions_db: ROLLBACK
+[0m21:35:50.351527 [debug] [ThreadPool]: On list_None_ecomm_transactions_db: Close
+[0m21:35:50.354974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3d7581b3-5c5d-4522-95e8-c57c1bf40bac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ab38f50>]}
+[0m21:35:50.355737 [debug] [MainThread]: Using mysql connection "master"
+[0m21:35:50.356202 [debug] [MainThread]: On master: BEGIN
+[0m21:35:50.356584 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:35:50.777450 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:50.777835 [debug] [MainThread]: On master: COMMIT
+[0m21:35:50.778027 [debug] [MainThread]: Using mysql connection "master"
+[0m21:35:50.778192 [debug] [MainThread]: On master: COMMIT
+[0m21:35:50.884538 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:50.884854 [debug] [MainThread]: On master: Close
+[0m21:35:50.885852 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:35:50.886191 [info ] [MainThread]: 
+[0m21:35:50.888704 [debug] [Thread-1 (]: Began running node model.dbt_mysql_project.ecomm_total_user_sales
+[0m21:35:50.889237 [info ] [Thread-1 (]: 1 of 3 START sql view model ecomm_transactions_db.ecomm_total_user_sales ....... [RUN]
+[0m21:35:50.889908 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_None_ecomm_transactions_db, now model.dbt_mysql_project.ecomm_total_user_sales)
+[0m21:35:50.890241 [debug] [Thread-1 (]: Began compiling node model.dbt_mysql_project.ecomm_total_user_sales
+[0m21:35:50.897489 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_mysql_project.ecomm_total_user_sales"
+[0m21:35:50.898309 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.ecomm_total_user_sales (compile): 21:35:50.890455 => 21:35:50.898112
+[0m21:35:50.898623 [debug] [Thread-1 (]: Began executing node model.dbt_mysql_project.ecomm_total_user_sales
+[0m21:35:50.921076 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_mysql_project.ecomm_total_user_sales"
+[0m21:35:50.921725 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.ecomm_total_user_sales"
+[0m21:35:50.921956 [debug] [Thread-1 (]: On model.dbt_mysql_project.ecomm_total_user_sales: BEGIN
+[0m21:35:50.922169 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:35:51.358096 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:51.359850 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.ecomm_total_user_sales"
+[0m21:35:51.361092 [debug] [Thread-1 (]: On model.dbt_mysql_project.ecomm_total_user_sales: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.ecomm_total_user_sales"} */
+
+  create view `ecomm_transactions_db`.`ecomm_total_user_sales__dbt_tmp`
+    
+    
+  as (
+    WITH user_totals AS (
+    SELECT
+        user_id,
+        product_category,
+        SUM(purchase_amount) AS total_sales
+    FROM `ecomm_transactions_db`.`ecomm_transactions`
+    GROUP BY 1,2
+),
+sales_by_category AS (
+SELECT
+    user_id,
+    SUM(CASE WHEN product_category = 'App' THEN total_sales ELSE 0 END)AS app_sales,
+    SUM(CASE WHEN product_category = 'Game' THEN total_sales ELSE 0 END) AS game_sales,
+    SUM(CASE WHEN product_category = 'In-app Purchases' THEN total_sales ELSE 0 END) AS inapp_sales
+FROM user_totals
+GROUP BY 1
+)
+SELECT
+    user_id,
+    app_sales AS app_sales,
+    game_sales AS game_sales,
+    inapp_sales AS inapp_sales,
+    app_sales + game_sales + inapp_sales AS total_sales
+FROM sales_by_category
+  );
+[0m21:35:51.474332 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:51.487700 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.ecomm_total_user_sales"
+[0m21:35:51.488323 [debug] [Thread-1 (]: On model.dbt_mysql_project.ecomm_total_user_sales: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.ecomm_total_user_sales"} */
+
+    drop view if exists `ecomm_transactions_db`.`ecomm_total_user_sales` cascade
+  
+[0m21:35:51.591615 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:51.595786 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.ecomm_total_user_sales"
+[0m21:35:51.596386 [debug] [Thread-1 (]: On model.dbt_mysql_project.ecomm_total_user_sales: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.ecomm_total_user_sales"} */
+
+    rename table `ecomm_transactions_db`.`ecomm_total_user_sales__dbt_tmp` to `ecomm_transactions_db`.`ecomm_total_user_sales`
+  
+[0m21:35:51.705382 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:51.726401 [debug] [Thread-1 (]: On model.dbt_mysql_project.ecomm_total_user_sales: COMMIT
+[0m21:35:51.726847 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.ecomm_total_user_sales"
+[0m21:35:51.727198 [debug] [Thread-1 (]: On model.dbt_mysql_project.ecomm_total_user_sales: COMMIT
+[0m21:35:51.830875 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:51.841057 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.ecomm_total_user_sales"
+[0m21:35:51.841531 [debug] [Thread-1 (]: On model.dbt_mysql_project.ecomm_total_user_sales: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.ecomm_total_user_sales"} */
+drop view if exists `ecomm_transactions_db`.`ecomm_total_user_sales__dbt_backup`
+[0m21:35:51.946606 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:51.952721 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.ecomm_total_user_sales (execute): 21:35:50.898800 => 21:35:51.952028
+[0m21:35:51.953331 [debug] [Thread-1 (]: On model.dbt_mysql_project.ecomm_total_user_sales: Close
+[0m21:35:51.954752 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3d7581b3-5c5d-4522-95e8-c57c1bf40bac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae39e50>]}
+[0m21:35:51.955681 [info ] [Thread-1 (]: 1 of 3 OK created sql view model ecomm_transactions_db.ecomm_total_user_sales .. [[32mSUCCESS 0[0m in 1.06s]
+[0m21:35:51.956532 [debug] [Thread-1 (]: Finished running node model.dbt_mysql_project.ecomm_total_user_sales
+[0m21:35:51.957127 [debug] [Thread-1 (]: Began running node model.dbt_mysql_project.my_first_dbt_model
+[0m21:35:51.957903 [info ] [Thread-1 (]: 2 of 3 START sql table model ecomm_transactions_db.my_first_dbt_model .......... [RUN]
+[0m21:35:51.959045 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_mysql_project.ecomm_total_user_sales, now model.dbt_mysql_project.my_first_dbt_model)
+[0m21:35:51.959514 [debug] [Thread-1 (]: Began compiling node model.dbt_mysql_project.my_first_dbt_model
+[0m21:35:51.963298 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:35:51.964667 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.my_first_dbt_model (compile): 21:35:51.959784 => 21:35:51.964384
+[0m21:35:51.965054 [debug] [Thread-1 (]: Began executing node model.dbt_mysql_project.my_first_dbt_model
+[0m21:35:51.984923 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:35:51.985654 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:35:51.985933 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: BEGIN
+[0m21:35:51.986190 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:35:52.409018 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:52.409530 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:35:52.409966 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+
+  
+    
+
+  create  table
+    `ecomm_transactions_db`.`my_first_dbt_model__dbt_tmp`
+    
+    
+      as
+    
+    (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    )
+
+  
+[0m21:35:52.565569 [debug] [Thread-1 (]: SQL status: SUCCESS 2 in 0.0 seconds
+[0m21:35:52.574172 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:35:52.574740 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+
+    drop table if exists `ecomm_transactions_db`.`my_first_dbt_model__dbt_backup` cascade
+  
+[0m21:35:52.684397 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:52.688690 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:35:52.689306 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+
+    rename table `ecomm_transactions_db`.`my_first_dbt_model` to `ecomm_transactions_db`.`my_first_dbt_model__dbt_backup`
+  
+[0m21:35:52.809258 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:52.816323 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:35:52.816869 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+
+    drop table if exists `ecomm_transactions_db`.`my_first_dbt_model` cascade
+  
+[0m21:35:52.921871 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:52.924395 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:35:52.924945 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+
+    rename table `ecomm_transactions_db`.`my_first_dbt_model__dbt_tmp` to `ecomm_transactions_db`.`my_first_dbt_model`
+  
+[0m21:35:53.049347 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:53.061816 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: COMMIT
+[0m21:35:53.062516 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:35:53.062953 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: COMMIT
+[0m21:35:53.166474 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:53.173487 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_first_dbt_model"
+[0m21:35:53.174002 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_first_dbt_model"} */
+drop table if exists `ecomm_transactions_db`.`my_first_dbt_model__dbt_backup`
+[0m21:35:53.286416 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:53.290295 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.my_first_dbt_model (execute): 21:35:51.965268 => 21:35:53.289933
+[0m21:35:53.290905 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_first_dbt_model: Close
+[0m21:35:53.292516 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3d7581b3-5c5d-4522-95e8-c57c1bf40bac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aeb02f0>]}
+[0m21:35:53.293451 [info ] [Thread-1 (]: 2 of 3 OK created sql table model ecomm_transactions_db.my_first_dbt_model ..... [[32mSUCCESS 2[0m in 1.33s]
+[0m21:35:53.294148 [debug] [Thread-1 (]: Finished running node model.dbt_mysql_project.my_first_dbt_model
+[0m21:35:53.295044 [debug] [Thread-1 (]: Began running node model.dbt_mysql_project.my_second_dbt_model
+[0m21:35:53.295624 [info ] [Thread-1 (]: 3 of 3 START sql view model ecomm_transactions_db.my_second_dbt_model .......... [RUN]
+[0m21:35:53.296563 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_mysql_project.my_first_dbt_model, now model.dbt_mysql_project.my_second_dbt_model)
+[0m21:35:53.297089 [debug] [Thread-1 (]: Began compiling node model.dbt_mysql_project.my_second_dbt_model
+[0m21:35:53.300724 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:35:53.301685 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.my_second_dbt_model (compile): 21:35:53.297406 => 21:35:53.301452
+[0m21:35:53.302056 [debug] [Thread-1 (]: Began executing node model.dbt_mysql_project.my_second_dbt_model
+[0m21:35:53.305974 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:35:53.306635 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:35:53.306988 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: BEGIN
+[0m21:35:53.307296 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:35:53.741458 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:53.743461 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:35:53.744596 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+
+  create view `ecomm_transactions_db`.`my_second_dbt_model__dbt_tmp`
+    
+    
+  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from `ecomm_transactions_db`.`my_first_dbt_model`
+where id = 1
+  );
+[0m21:35:53.853855 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:53.866402 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:35:53.866855 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+
+    drop view if exists `ecomm_transactions_db`.`my_second_dbt_model__dbt_backup` cascade
+  
+[0m21:35:53.969901 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:53.972876 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:35:53.973423 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+
+    rename table `ecomm_transactions_db`.`my_second_dbt_model` to `ecomm_transactions_db`.`my_second_dbt_model__dbt_backup`
+  
+[0m21:35:54.078381 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:54.081349 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:35:54.081842 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+
+    drop view if exists `ecomm_transactions_db`.`my_second_dbt_model` cascade
+  
+[0m21:35:54.188414 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:54.189527 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:35:54.189831 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+
+    rename table `ecomm_transactions_db`.`my_second_dbt_model__dbt_tmp` to `ecomm_transactions_db`.`my_second_dbt_model`
+  
+[0m21:35:54.296510 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:54.304680 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: COMMIT
+[0m21:35:54.305217 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:35:54.305687 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: COMMIT
+[0m21:35:54.411353 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:54.417835 [debug] [Thread-1 (]: Using mysql connection "model.dbt_mysql_project.my_second_dbt_model"
+[0m21:35:54.418432 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "dbt_mysql_project", "target_name": "dev", "node_id": "model.dbt_mysql_project.my_second_dbt_model"} */
+drop view if exists `ecomm_transactions_db`.`my_second_dbt_model__dbt_backup`
+[0m21:35:54.525387 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:54.529725 [debug] [Thread-1 (]: Timing info for model.dbt_mysql_project.my_second_dbt_model (execute): 21:35:53.302270 => 21:35:54.529412
+[0m21:35:54.530250 [debug] [Thread-1 (]: On model.dbt_mysql_project.my_second_dbt_model: Close
+[0m21:35:54.531593 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3d7581b3-5c5d-4522-95e8-c57c1bf40bac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b90fce0>]}
+[0m21:35:54.532442 [info ] [Thread-1 (]: 3 of 3 OK created sql view model ecomm_transactions_db.my_second_dbt_model ..... [[32mSUCCESS 0[0m in 1.24s]
+[0m21:35:54.533128 [debug] [Thread-1 (]: Finished running node model.dbt_mysql_project.my_second_dbt_model
+[0m21:35:54.534690 [debug] [MainThread]: Using mysql connection "master"
+[0m21:35:54.535041 [debug] [MainThread]: On master: BEGIN
+[0m21:35:54.535363 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:35:54.967783 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:54.969570 [debug] [MainThread]: On master: COMMIT
+[0m21:35:54.970856 [debug] [MainThread]: Using mysql connection "master"
+[0m21:35:54.971446 [debug] [MainThread]: On master: COMMIT
+[0m21:35:55.071215 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m21:35:55.072616 [debug] [MainThread]: On master: Close
+[0m21:35:55.075132 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:35:55.075553 [debug] [MainThread]: Connection 'model.dbt_mysql_project.my_second_dbt_model' was properly closed.
+[0m21:35:55.076210 [info ] [MainThread]: 
+[0m21:35:55.076846 [info ] [MainThread]: Finished running 2 view models, 1 table model in 0 hours 0 minutes and 5.82 seconds (5.82s).
+[0m21:35:55.078472 [debug] [MainThread]: Command end result
+[0m21:35:55.087829 [info ] [MainThread]: 
+[0m21:35:55.088297 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:35:55.088609 [info ] [MainThread]: 
+[0m21:35:55.088951 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m21:35:55.091069 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 6.143796, "process_user_time": 1.459089, "process_kernel_time": 0.137026, "process_mem_max_rss": "123125760", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m21:35:55.091846 [debug] [MainThread]: Command `dbt run` succeeded at 21:35:55.091717 after 6.14 seconds
+[0m21:35:55.092267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1098cd1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ab15580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10938f980>]}
+[0m21:35:55.092665 [debug] [MainThread]: Flushing usage events

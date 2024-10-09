@@ -1,0 +1,36 @@
+version: 1
+
+sources:
+  - name: ecomm_transactions_db
+    database: ecomm_transactions_db
+    tables:
+      - name: ecomm_transactions        
+
+models:
+  - name: ecomm_total_user_sales
+    description: This model aggregates total sales by user.
+    columns:
+      - name: user_id
+        description: The unique identifier for the user.
+        tests:
+          - unique
+          - not_null
+      - name: app_sales
+        description: The total app sales for the user.
+        tests:
+          - not_null
+          
+      - name: game_sales
+        description: The total game sales for the user.
+        tests:
+          - not_null
+          
+      - name: inapp_sales
+        description: The total inapp sales for the user.
+        tests:
+          - not_null
+
+      - name: total_sales
+        description: The total sales for the user.
+        tests:
+          - not_null
