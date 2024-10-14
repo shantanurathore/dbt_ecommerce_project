@@ -5,11 +5,32 @@ from sqlalchemy import create_engine, Column, Integer, String, Float, DateTime
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.schema import Index
+from dotenv import load_dotenv
+import os
+
 
 # SQLAlchemy setup
 Base = declarative_base()
 
+# Load environment variables from .env file
+load_dotenv()
+
+# Retrieve sensitive data from environment variables
+DATABASE_URL = os.getenv('DATABASE_URL')
+
 class Transaction(Base):
+    """
+    SQLAlchemy ORM class for the ecomm_transactions table.
+    
+    Attributes:
+        transaction_id (int): Primary key for the transaction.
+        user_id (int): ID of the user making the transaction.
+        product_id (int): ID of the product being purchased.
+        timestamp (datetime): Timestamp of the transaction.
+        purchase_amount (float): Amount of the purchase.
+        product_category (str): Category of the product.
+        user_location (str): Location of the user.
+    """
     __tablename__ = 'ecomm_transactions'
 
     transaction_id = Column(Integer, primary_key=True)
@@ -27,6 +48,15 @@ class Transaction(Base):
     )
 
 def generate_ecommerce_data(num_records=100000):
+    """
+    Generates a DataFrame with synthetic e-commerce transaction data.
+    
+    Args:
+        num_records (int): Number of records to generate. Default is 100,000.
+    
+    Returns:
+        pd.DataFrame: DataFrame containing the generated data.
+    """
     np.random.seed(42)
     
     end_date = datetime.now()
@@ -46,6 +76,16 @@ def generate_ecommerce_data(num_records=100000):
     return pd.DataFrame(data)
 
 def upload_to_aws(df, db_url):
+    """
+    Uploads the DataFrame to an AWS database.
+    
+    Args:
+        df (pd.DataFrame): DataFrame containing the data to upload.
+        db_url (str): Database URL for the AWS database.
+    
+    Returns:
+        None
+    """
     engine = create_engine(db_url)
     Base.metadata.create_all(engine)
     
@@ -57,9 +97,9 @@ def upload_to_aws(df, db_url):
     for i in range(0, len(df), chunk_size):
         chunk = df.iloc[i:i+chunk_size]
         records = chunk.to_dict('records')
+        # Add records to the session and commit
         session.bulk_insert_mappings(Transaction, records)
         session.commit()
-        print(f"Uploaded records {i+1} to {i+len(chunk)}")
 
     session.close()
 
